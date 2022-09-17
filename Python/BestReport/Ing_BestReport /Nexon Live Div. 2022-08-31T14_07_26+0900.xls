@@ -1,0 +1,3130 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Nexon Live Div.</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#0747a6" height="29">
+        <td colspan="12">
+            <img src="https://jiralive.nexon.com/jira-logo-scaled.png" width="147" height="29" border="0" alt="Nexon Live Div.">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="12">
+            <a href="https://jiralive.nexon.com/issues/?jql=project+%3D+MSKR+AND+issuetype+%3D+Bug+AND+QA%EB%A0%88%EC%9D%B4%EB%B8%94+%3D+%EB%B2%84%EA%B7%B8%EB%A6%AC%ED%8F%AC%ED%8A%B8+AND+created+%3E%3D+2022-08-17+AND+created+%3C%3D+2022-08-26+ORDER+BY+summary+ASC%2C+createdDate+DESC">Nexon Live Div.</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="12">
+            <strong>2022/08/31 14:07</strong>에서 <strong>106</strong> 이슈를 표시.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                            <issuetable-web-component data-content="issues">
+                <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                            이슈 유형
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                            키
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            요약
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                            담당자
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                            보고자
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                            우선순위
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            상태
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                            생성일
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                            변경일
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                            해결책
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_12710" data-id="customfield_12710">
+                            QA결함데이터
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_12506" data-id="customfield_12506">
+                            QA레이블
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow988292" rel="988292" data-issuekey="MSKR-54040" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54040" href="https://jiralive.nexon.com/browse/MSKR-54040">MSKR-54040</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] &#39;무릉도장 지금 올라갑니다 -타르카&#39; 업적을 달성할 수 없는 문제
+    </p>
+</td>
+                                            <td class="assignee">            함태경 [bahtk50]
+    </td>
+                                            <td class="reporter">            장용훈 [yongjang]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 13:43 </td>
+                                            <td class="updated"> 2022/08/25 15:31 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow989202" rel="989202" data-issuekey="MSKR-54194" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54194" href="https://jiralive.nexon.com/browse/MSKR-54194">MSKR-54194</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 놀라운 장비강화 주문서 사용에 실패해도 아이템 파괴되지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            이준성 [juneslee]
+    </td>
+                                            <td class="reporter">            이운식 [ristake]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/24 10:59 </td>
+                                            <td class="updated"> 2022/08/29 15:21 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988305" rel="988305" data-issuekey="MSKR-54044" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54044" href="https://jiralive.nexon.com/browse/MSKR-54044">MSKR-54044</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 눈사람 옷과 언더그라운드 일렉기타 함께 착용 시 이미지 오류
+    </p>
+</td>
+                                            <td class="assignee">            송화연 [hwayeon]
+    </td>
+                                            <td class="reporter">            곽태민 [grease]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:04 </td>
+                                            <td class="updated"> 2022/08/23 13:29 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow989230" rel="989230" data-issuekey="MSKR-54197" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54197" href="https://jiralive.nexon.com/browse/MSKR-54197">MSKR-54197</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 더 시드 14층 몬스터 명중 시 효과음이 없는 이슈
+    </p>
+</td>
+                                            <td class="assignee">            함태경 [bahtk50]
+    </td>
+                                            <td class="reporter">            곽태민 [grease]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/24 11:24 </td>
+                                            <td class="updated"> 2022/08/29 10:21 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow989280" rel="989280" data-issuekey="MSKR-54204" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54204" href="https://jiralive.nexon.com/browse/MSKR-54204">MSKR-54204</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 돌발 미션 몬스터 멀티킬 15회 미션 완료 얼랏 출력 현상
+    </p>
+</td>
+                                            <td class="assignee">            유경희 [y1032]
+    </td>
+                                            <td class="reporter">            양광록 [rhkdfhr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;버그아님&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;버그 아님 판단 대기 중인 이슈&lt;/span&gt;">버그아님</span>    </td>
+                                            <td class="created"> 2022/08/24 13:33 </td>
+                                            <td class="updated"> 2022/08/24 14:24 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988276" rel="988276" data-issuekey="MSKR-54033" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54033" href="https://jiralive.nexon.com/browse/MSKR-54033">MSKR-54033</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 리스항구 제인 NPC 클릭 시 대사 어색한 현상
+    </p>
+</td>
+                                            <td class="assignee">            윤태정 [RockYoon]
+    </td>
+                                            <td class="reporter">            양광록 [rhkdfhr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/22 13:20 </td>
+                                            <td class="updated"> 2022/08/24 13:13 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988325" rel="988325" data-issuekey="MSKR-54050" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54050" href="https://jiralive.nexon.com/browse/MSKR-54050">MSKR-54050</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 몬스터 리젠이 완전히 종료되기 전 데미지를 데미지를 입힐 수 있는 현상
+    </p>
+</td>
+                                            <td class="assignee">            남준 [namjun]
+    </td>
+                                            <td class="reporter">            서신영 [trustme]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:33 </td>
+                                            <td class="updated"> 2022/08/29 13:35 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988282" rel="988282" data-issuekey="MSKR-54036" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54036" href="https://jiralive.nexon.com/browse/MSKR-54036">MSKR-54036</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 몬스터 파크 셀라스 1단계 필드에서 베리타테의 이름이 잘못 출력되는 문제
+    </p>
+</td>
+                                            <td class="assignee">            이지현4 [jilee110]
+    </td>
+                                            <td class="reporter">            장용훈 [yongjang]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 13:29 </td>
+                                            <td class="updated"> 2022/08/24 10:45 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987818" rel="987818" data-issuekey="MSKR-53952" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53952" href="https://jiralive.nexon.com/browse/MSKR-53952">MSKR-53952</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 무릉 60층 시그너스 공반 스킬 사용 중 타격 시 공격 반사 안 되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            이성식 [piri159]
+    </td>
+                                            <td class="reporter">            양광록 [rhkdfhr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;개발 확인 중&lt;/span&gt;">개발 확인 중</span>    </td>
+                                            <td class="created"> 2022/08/19 13:42 </td>
+                                            <td class="updated"> 2022/08/31 13:50 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988659" rel="988659" data-issuekey="MSKR-54136" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54136" href="https://jiralive.nexon.com/browse/MSKR-54136">MSKR-54136</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 미하일 퀘스트 36625 &#39;가리워진 진실&#39; 진행중 스크립트에서 일부 대사가 누락된 문제
+    </p>
+</td>
+                                            <td class="assignee">            윤태정 [RockYoon]
+    </td>
+                                            <td class="reporter">            김다인 [hidain]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/23 10:42 </td>
+                                            <td class="updated"> 2022/08/23 18:31 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988370" rel="988370" data-issuekey="MSKR-54066" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54066" href="https://jiralive.nexon.com/browse/MSKR-54066">MSKR-54066</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 비숍, 홀리 블러드 쿨타임 감소 관련 문구 개선 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:22 </td>
+                                            <td class="updated"> 2022/08/24 18:10 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987821" rel="987821" data-issuekey="MSKR-53953" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53953" href="https://jiralive.nexon.com/browse/MSKR-53953">MSKR-53953</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 소비 아이템 &#39;카페라떼 한잔&#39; 이름 내 띄어쓰기가 어색한 문제
+    </p>
+</td>
+                                            <td class="assignee">            김형준7 [henry0521]
+    </td>
+                                            <td class="reporter">            김다인 [hidain]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;QA팀 확인&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;QA팀의 확인이 필요한 이슈&lt;/span&gt;">QA팀 확인</span>    </td>
+                                            <td class="created"> 2022/08/19 13:43 </td>
+                                            <td class="updated"> 2022/08/30 14:28 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988237" rel="988237" data-issuekey="MSKR-54022" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54022" href="https://jiralive.nexon.com/browse/MSKR-54022">MSKR-54022</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 스킬 툴팁 개선 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            김혜원 [hyewonk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/22 11:54 </td>
+                                            <td class="updated"> 2022/08/24 16:46 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987958" rel="987958" data-issuekey="MSKR-53993" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53993" href="https://jiralive.nexon.com/browse/MSKR-53993">MSKR-53993</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 시그너스 팔랑크스 스킬 사용 시 캐릭터 이미지가 어색하게 출력되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김호식2 [bluecoffee]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/19 16:52 </td>
+                                            <td class="updated"> 2022/08/24 09:33 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988491" rel="988491" data-issuekey="MSKR-54090" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54090" href="https://jiralive.nexon.com/browse/MSKR-54090">MSKR-54090</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 썬콜, 지하 수로 내부 맵의 오른쪽에서 썬더 브레이크 사용 시 지형 아래에 소환되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김호식2 [bluecoffee]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/22 18:21 </td>
+                                            <td class="updated"> 2022/08/24 09:33 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988341" rel="988341" data-issuekey="MSKR-54054" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54054" href="https://jiralive.nexon.com/browse/MSKR-54054">MSKR-54054</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 아스완 오벨리스크 맵과 아스완 피난처 미니맵 아이콘이 다른 현상 
+    </p>
+</td>
+                                            <td class="assignee">            남준 [namjun]
+    </td>
+                                            <td class="reporter">            서신영 [trustme]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:48 </td>
+                                            <td class="updated"> 2022/08/23 10:47 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988332" rel="988332" data-issuekey="MSKR-54051" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54051" href="https://jiralive.nexon.com/browse/MSKR-54051">MSKR-54051</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 아스완 피난처 우측 포털 접근 방식에 따라 NPC 이름이 다르게 출력되는 문제 
+    </p>
+</td>
+                                            <td class="assignee">            김형준7 [henry0521]
+    </td>
+                                            <td class="reporter">            서신영 [trustme]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;QA팀 확인&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;QA팀의 확인이 필요한 이슈&lt;/span&gt;">QA팀 확인</span>    </td>
+                                            <td class="created"> 2022/08/22 14:40 </td>
+                                            <td class="updated"> 2022/08/30 14:28 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987763" rel="987763" data-issuekey="MSKR-53941" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53941" href="https://jiralive.nexon.com/browse/MSKR-53941">MSKR-53941</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 업적UI에 달성임박 업적을 누르면 검색결과로 이동되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            유경희 [y1032]
+    </td>
+                                            <td class="reporter">            김준영2 [crisispr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 11:57 </td>
+                                            <td class="updated"> 2022/08/23 11:13 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988367" rel="988367" data-issuekey="MSKR-54065" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54065" href="https://jiralive.nexon.com/browse/MSKR-54065">MSKR-54065</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 올리비아, 검거?(36309) 퀘스트 디렉션 중 올리비아 대사가 어색한 현상 
+    </p>
+</td>
+                                            <td class="assignee">            유지선 [july]
+    </td>
+                                            <td class="reporter">            김태현2 [kimtang]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;QA팀 확인&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;QA팀의 확인이 필요한 이슈&lt;/span&gt;">QA팀 확인</span>    </td>
+                                            <td class="created"> 2022/08/22 15:20 </td>
+                                            <td class="updated"> 2022/08/30 12:54 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988342" rel="988342" data-issuekey="MSKR-54055" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54055" href="https://jiralive.nexon.com/browse/MSKR-54055">MSKR-54055</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 일부 맵 이미지 관련 문제 취합
+    </p>
+</td>
+                                            <td class="assignee">            염동윤 [P4nic]
+    </td>
+                                            <td class="reporter">            박태영2 [typark]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:49 </td>
+                                            <td class="updated"> 2022/08/24 19:41 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988288" rel="988288" data-issuekey="MSKR-54038" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54038" href="https://jiralive.nexon.com/browse/MSKR-54038">MSKR-54038</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 채팅 중 스크린샷 단축키 버튼으로 설정된 키 입력 시 스크린샷 기능이 적용되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            염동윤 [P4nic]
+    </td>
+                                            <td class="reporter">            곽태민 [grease]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/22 13:38 </td>
+                                            <td class="updated"> 2022/08/24 15:38 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987825" rel="987825" data-issuekey="MSKR-53955" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53955" href="https://jiralive.nexon.com/browse/MSKR-53955">MSKR-53955</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 테네브리스 지역 미니맵에서 컨벡스 이미지가 잘 안 보이는 현상
+    </p>
+</td>
+                                            <td class="assignee">            최준하 [cjh980402]
+    </td>
+                                            <td class="reporter">            양광록 [rhkdfhr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;보류&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;보류된 이슈&lt;/span&gt;">보류</span>    </td>
+                                            <td class="created"> 2022/08/19 13:48 </td>
+                                            <td class="updated"> 2022/08/26 14:51 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987814" rel="987814" data-issuekey="MSKR-53948" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53948" href="https://jiralive.nexon.com/browse/MSKR-53948">MSKR-53948</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 특정 해상도에서 데미안과 일정 거리가 떨어져 있을 경우, 데미안이 패턴을 사용하지 않는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김호식2 [bluecoffee]
+    </td>
+                                            <td class="reporter">            장용훈 [yongjang]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/19 13:38 </td>
+                                            <td class="updated"> 2022/08/24 09:33 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988279" rel="988279" data-issuekey="MSKR-54034" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54034" href="https://jiralive.nexon.com/browse/MSKR-54034">MSKR-54034</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 프렌즈스토리 초기화 시, 대화창에 NPC 엘윈 이미지가 개로 출력되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            송의성 [krsong97]
+    </td>
+                                            <td class="reporter">            장용훈 [yongjang]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;QA팀 확인&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;QA팀의 확인이 필요한 이슈&lt;/span&gt;">QA팀 확인</span>    </td>
+                                            <td class="created"> 2022/08/22 13:24 </td>
+                                            <td class="updated"> 2022/08/30 17:03 </td>
+                                            <td class="resolution">    <em>미해결</em>
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987800" rel="987800" data-issuekey="MSKR-53946" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53946" href="https://jiralive.nexon.com/browse/MSKR-53946">MSKR-53946</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 헤네시스 장롱이 떨어진 집에서 제로 버스트 스텝이 왼쪽에서 오른쪽으로만 이동 가능한 현상
+    </p>
+</td>
+                                            <td class="assignee">            남준 [namjun]
+    </td>
+                                            <td class="reporter">            박태영2 [typark]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 13:15 </td>
+                                            <td class="updated"> 2022/08/19 13:31 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988350" rel="988350" data-issuekey="MSKR-54058" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54058" href="https://jiralive.nexon.com/browse/MSKR-54058">MSKR-54058</a>
+</td>
+                                            <td class="summary"><p>
+                [기타] 황금 망치 사용 불가능한 일부 이벤트링에 황금 망치 사용 시 제련 연출이 재생되는 문제
+    </p>
+</td>
+                                            <td class="assignee">            함태경 [bahtk50]
+    </td>
+                                            <td class="reporter">            서신영 [trustme]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;QA팀 확인&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;QA팀의 확인이 필요한 이슈&lt;/span&gt;">QA팀 확인</span>    </td>
+                                            <td class="created"> 2022/08/22 15:01 </td>
+                                            <td class="updated"> 2022/08/30 10:01 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987815" rel="987815" data-issuekey="MSKR-53949" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53949" href="https://jiralive.nexon.com/browse/MSKR-53949">MSKR-53949</a>
+</td>
+                                            <td class="summary"><p>
+                [기타][스킬밸런싱] 루시드 2페이즈에서 제로 캐릭터 버스트 스텝 사용시 맵 아래로 떨어지는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이운식 [ristake]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 13:38 </td>
+                                            <td class="updated"> 2022/08/24 11:10 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987843" rel="987843" data-issuekey="MSKR-53964" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53964" href="https://jiralive.nexon.com/browse/MSKR-53964">MSKR-53964</a>
+</td>
+                                            <td class="summary"><p>
+                [레인보우] 스크립트 오타 및 맞춤법 모음
+    </p>
+</td>
+                                            <td class="assignee">            곽혜주 [rasthie]
+    </td>
+                                            <td class="reporter">            홍정우 [opinio]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 14:21 </td>
+                                            <td class="updated"> 2022/08/23 17:53 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988281" rel="988281" data-issuekey="MSKR-54035" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54035" href="https://jiralive.nexon.com/browse/MSKR-54035">MSKR-54035</a>
+</td>
+                                            <td class="summary"><p>
+                [레인보우] 화요일 혜택 리부트 미적용 확인요청
+    </p>
+</td>
+                                            <td class="assignee">            곽혜주 [rasthie]
+    </td>
+                                            <td class="reporter">            홍정우 [opinio]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 13:26 </td>
+                                            <td class="updated"> 2022/08/23 13:03 </td>
+                                            <td class="resolution">    완료
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988405" rel="988405" data-issuekey="MSKR-54075" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54075" href="https://jiralive.nexon.com/browse/MSKR-54075">MSKR-54075</a>
+</td>
+                                            <td class="summary"><p>
+                [미니게임] 풀 문 포인트 일일 획득 가능량 채울 시 미니게임 매칭이 안된다는 버그리포트
+    </p>
+</td>
+                                            <td class="assignee">            남승원 [snwnn]
+    </td>
+                                            <td class="reporter">            김혜원 [hyewonk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 16:02 </td>
+                                            <td class="updated"> 2022/08/23 10:38 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow989302" rel="989302" data-issuekey="MSKR-54207" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54207" href="https://jiralive.nexon.com/browse/MSKR-54207">MSKR-54207</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 검은마법사 3페이즈 존의 크기가 가장 작을 때 키네시스 얼티메이트-메테리얼 데미지가 정상 반영되지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김호식2 [bluecoffee]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Dev Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The bug has been assigned to a developer to fix&lt;/span&gt;">Dev Open</span>    </td>
+                                            <td class="created"> 2022/08/24 14:12 </td>
+                                            <td class="updated"> 2022/08/29 08:51 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987882" rel="987882" data-issuekey="MSKR-53972" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53972" href="https://jiralive.nexon.com/browse/MSKR-53972">MSKR-53972</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 그란디스의 여신의 축복 사용 후 V코어에서 제외할 경우 버프 효과는 적용되지 않지만 재장착 시 바로 적용이 가능한 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 15:17 </td>
+                                            <td class="updated"> 2022/08/23 11:17 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987966" rel="987966" data-issuekey="MSKR-53994" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53994" href="https://jiralive.nexon.com/browse/MSKR-53994">MSKR-53994</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 나이트워커 도미니언 툴팁 내용 관련 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 17:09 </td>
+                                            <td class="updated"> 2022/08/23 17:25 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988337" rel="988337" data-issuekey="MSKR-54053" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54053" href="https://jiralive.nexon.com/browse/MSKR-54053">MSKR-54053</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 루미너스, 모닝 스타폴 이펙트가 간헐적으로 출력되지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:43 </td>
+                                            <td class="updated"> 2022/08/23 13:50 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988383" rel="988383" data-issuekey="MSKR-54069" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54069" href="https://jiralive.nexon.com/browse/MSKR-54069">MSKR-54069</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 루미너스, 이퀄리브리엄 상태에서 메모라이즈 사용 시 안내 문구 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            박다원 [CokeLove]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:37 </td>
+                                            <td class="updated"> 2022/08/22 17:38 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988430" rel="988430" data-issuekey="MSKR-54079" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54079" href="https://jiralive.nexon.com/browse/MSKR-54079">MSKR-54079</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 루미너스, 이퀄리브리엄 상태에서 모닝 스타폴사용할 경우 쿨타임 없이 연속 사용 가능한 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 16:36 </td>
+                                            <td class="updated"> 2022/08/23 14:08 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988540" rel="988540" data-issuekey="MSKR-54106" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54106" href="https://jiralive.nexon.com/browse/MSKR-54106">MSKR-54106</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 메르세데스, 더스크 촉수가 겹친 곳에서 거스트 다이브 사용 시 맨 아래 지형으로 떨어지는 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 21:24 </td>
+                                            <td class="updated"> 2022/08/23 21:33 </td>
+                                            <td class="resolution">    수정불가
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988465" rel="988465" data-issuekey="MSKR-54083" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54083" href="https://jiralive.nexon.com/browse/MSKR-54083">MSKR-54083</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 메르세데스, 실피디아 사용 중 캐릭터 사망 시 버프 프리저 효과 적용되지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 17:49 </td>
+                                            <td class="updated"> 2022/08/23 14:25 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988419" rel="988419" data-issuekey="MSKR-54077" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54077" href="https://jiralive.nexon.com/browse/MSKR-54077">MSKR-54077</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 메르세데스, 엘리멘탈 나이트로 소환된 정령 공격 기준 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 16:20 </td>
+                                            <td class="updated"> 2022/08/23 14:05 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988320" rel="988320" data-issuekey="MSKR-54048" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54048" href="https://jiralive.nexon.com/browse/MSKR-54048">MSKR-54048</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 메르세데스, 연속 거스트 다이브 사용이 불가능하다는 동향 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:30 </td>
+                                            <td class="updated"> 2022/08/22 20:11 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988389" rel="988389" data-issuekey="MSKR-54072" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54072" href="https://jiralive.nexon.com/browse/MSKR-54072">MSKR-54072</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 메카닉, 워머신 : 타이탄 근접 공격이 발생하지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            정현정 [meowgrrr]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:45 </td>
+                                            <td class="updated"> 2022/08/23 19:00 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988360" rel="988360" data-issuekey="MSKR-54062" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54062" href="https://jiralive.nexon.com/browse/MSKR-54062">MSKR-54062</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 모험가 궁수, 하향 점프 키다운 사용 시 어색한 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:11 </td>
+                                            <td class="updated"> 2022/08/22 17:36 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988269" rel="988269" data-issuekey="MSKR-54030" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54030" href="https://jiralive.nexon.com/browse/MSKR-54030">MSKR-54030</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 미하일, 매크로에 샤이닝 크로스 3개 등록 후 소드 오브 소울 라이트 효과 적용 중일 경우 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/22 13:08 </td>
+                                            <td class="updated"> 2022/08/29 09:16 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988009" rel="988009" data-issuekey="MSKR-54001" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54001" href="https://jiralive.nexon.com/browse/MSKR-54001">MSKR-54001</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 미하일, 하이퍼 스킬이 쿨타임 감소 효과의 영향을 받지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 18:15 </td>
+                                            <td class="updated"> 2022/08/22 22:37 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988300" rel="988300" data-issuekey="MSKR-54042" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54042" href="https://jiralive.nexon.com/browse/MSKR-54042">MSKR-54042</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 볼트 플로우, 쿼버 플로우 지속 시간 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:00 </td>
+                                            <td class="updated"> 2022/08/23 13:31 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988534" rel="988534" data-issuekey="MSKR-54102" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54102" href="https://jiralive.nexon.com/browse/MSKR-54102">MSKR-54102</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 블래스터, 매그넘 펀치 공격 범위 확인요청 
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 20:43 </td>
+                                            <td class="updated"> 2022/08/23 15:03 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988319" rel="988319" data-issuekey="MSKR-54047" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54047" href="https://jiralive.nexon.com/browse/MSKR-54047">MSKR-54047</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 블래스터, 버닝 브레이커 재사용 하여 즉시 폭발 시 무적 시간이 짧아진 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:25 </td>
+                                            <td class="updated"> 2022/08/23 13:36 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988530" rel="988530" data-issuekey="MSKR-54100" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54100" href="https://jiralive.nexon.com/browse/MSKR-54100">MSKR-54100</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 블래스터, 불릿 리로드 중 버닝 브레이커 재사용하여 즉시 폭발에 딜레이가 발생한다는 동향 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 20:09 </td>
+                                            <td class="updated"> 2022/08/24 11:29 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988008" rel="988008" data-issuekey="MSKR-54000" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54000" href="https://jiralive.nexon.com/browse/MSKR-54000">MSKR-54000</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 섀도어 다크 플레어로 몬스터 처치 시 에르다 파운틴이 발동하지 않는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 18:10 </td>
+                                            <td class="updated"> 2022/08/23 11:09 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988365" rel="988365" data-issuekey="MSKR-54064" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54064" href="https://jiralive.nexon.com/browse/MSKR-54064">MSKR-54064</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 섀도어 인투다크니스 사용 시 윌 1페이즈의 보라색 구체로 이동되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            송현진 [hjsong]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Dev Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The bug has been assigned to a developer to fix&lt;/span&gt;">Dev Open</span>    </td>
+                                            <td class="created"> 2022/08/22 15:18 </td>
+                                            <td class="updated"> 2022/08/29 16:02 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988356" rel="988356" data-issuekey="MSKR-54061" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54061" href="https://jiralive.nexon.com/browse/MSKR-54061">MSKR-54061</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 소울마스터 플레어 슬래시 발동 중 밧줄에 매달리면 사용되지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:07 </td>
+                                            <td class="updated"> 2022/08/23 17:10 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988223" rel="988223" data-issuekey="MSKR-54018" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54018" href="https://jiralive.nexon.com/browse/MSKR-54018">MSKR-54018</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 스킬 사용 시 사운드가 비정상적으로 크게 들린다는 동향 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 11:34 </td>
+                                            <td class="updated"> 2022/08/22 21:16 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988285" rel="988285" data-issuekey="MSKR-54037" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54037" href="https://jiralive.nexon.com/browse/MSKR-54037">MSKR-54037</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 아란, 아드레날린 제네레이터 디스크립션 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            정현정 [meowgrrr]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 13:32 </td>
+                                            <td class="updated"> 2022/08/23 18:56 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988516" rel="988516" data-issuekey="MSKR-54095" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54095" href="https://jiralive.nexon.com/browse/MSKR-54095">MSKR-54095</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 아크 스펙터 상태에서 에르다 파운틴 사용이 불가능한 현상
+    </p>
+</td>
+                                            <td class="assignee">            정현정 [meowgrrr]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 19:13 </td>
+                                            <td class="updated"> 2022/08/23 19:52 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988004" rel="988004" data-issuekey="MSKR-53999" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53999" href="https://jiralive.nexon.com/browse/MSKR-53999">MSKR-53999</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 에르다 파운틴 공격 조건인 몹 처치수에 소환수가 공격한 경우는 포함되지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            조인식 [tesith]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 18:05 </td>
+                                            <td class="updated"> 2022/08/23 13:26 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988489" rel="988489" data-issuekey="MSKR-54089" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54089" href="https://jiralive.nexon.com/browse/MSKR-54089">MSKR-54089</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 에르다 파운틴 스킬에 캡틴 유니온 효과가 적용되지 않는 현상 
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 18:18 </td>
+                                            <td class="updated"> 2022/08/22 22:37 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987967" rel="987967" data-issuekey="MSKR-53995" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53995" href="https://jiralive.nexon.com/browse/MSKR-53995">MSKR-53995</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 에르다 파운틴이 몬스터를 공격했으나 처치하지 못한다는 동향 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 17:10 </td>
+                                            <td class="updated"> 2022/08/23 13:21 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987914" rel="987914" data-issuekey="MSKR-53981" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53981" href="https://jiralive.nexon.com/browse/MSKR-53981">MSKR-53981</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 엔젤릭버스터 소울 레조넌스 사용 후, 핑크 스커드를 사용할 수 없는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 15:48 </td>
+                                            <td class="updated"> 2022/08/23 17:22 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988002" rel="988002" data-issuekey="MSKR-53998" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53998" href="https://jiralive.nexon.com/browse/MSKR-53998">MSKR-53998</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 여신의 축복 스택 별 쿨타임 주기 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 17:54 </td>
+                                            <td class="updated"> 2022/08/22 21:26 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987935" rel="987935" data-issuekey="MSKR-53984" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53984" href="https://jiralive.nexon.com/browse/MSKR-53984">MSKR-53984</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 여신의 축복 스택 충전 시간이 쿨타임 감소 효과를 적용 받아 감소하는 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 16:11 </td>
+                                            <td class="updated"> 2022/08/23 11:56 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987911" rel="987911" data-issuekey="MSKR-53980" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53980" href="https://jiralive.nexon.com/browse/MSKR-53980">MSKR-53980</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 여신의 축복 스택이 모두 충전된 상태로 특정 컨텐츠 입장 시 모두 리셋되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            조인식 [tesith]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 15:46 </td>
+                                            <td class="updated"> 2022/08/23 11:38 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988021" rel="988021" data-issuekey="MSKR-54004" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54004" href="https://jiralive.nexon.com/browse/MSKR-54004">MSKR-54004</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 오디움 몬파맵 이동 시 배틀메이지 어비셜 라이트닝 명계의 번개가 발동하지 않는 문제
+    </p>
+</td>
+                                            <td class="assignee">            박혜진4 [Jinbyjin915]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 19:07 </td>
+                                            <td class="updated"> 2022/08/23 11:41 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988376" rel="988376" data-issuekey="MSKR-54068" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54068" href="https://jiralive.nexon.com/browse/MSKR-54068">MSKR-54068</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 오디움 무너지는 실험체 몬스터에게 블러디 익스플로전 스킬을 사용할 수 없는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:28 </td>
+                                            <td class="updated"> 2022/08/23 11:11 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987947" rel="987947" data-issuekey="MSKR-53988" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53988" href="https://jiralive.nexon.com/browse/MSKR-53988">MSKR-53988</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 와일드헌터 비스트 폼의 무적 기능이 정상 작동하지 않는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 16:38 </td>
+                                            <td class="updated"> 2022/08/23 17:40 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987953" rel="987953" data-issuekey="MSKR-53991" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53991" href="https://jiralive.nexon.com/browse/MSKR-53991">MSKR-53991</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 와일드헌터 재규어 라이딩 후 재규어 스톰 사용하여 소환된 재규어가 램피지 애즈 원이 발동되지 않는 문제
+    </p>
+</td>
+                                            <td class="assignee">            박찬 [pcremnant]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 16:48 </td>
+                                            <td class="updated"> 2022/08/23 17:30 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988513" rel="988513" data-issuekey="MSKR-54093" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54093" href="https://jiralive.nexon.com/browse/MSKR-54093">MSKR-54093</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 윈브, 로프에서 윗점 시도 시 사용 불가 메시지가 반복적으로 노출되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            정현정 [meowgrrr]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 18:57 </td>
+                                            <td class="updated"> 2022/08/23 19:39 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988307" rel="988307" data-issuekey="MSKR-54045" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54045" href="https://jiralive.nexon.com/browse/MSKR-54045">MSKR-54045</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 윈브, 지하 수로, 무릉도장 입장 시 하울링 게일 스택이 초기화되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            정현정 [meowgrrr]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;보류&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;보류된 이슈&lt;/span&gt;">보류</span>    </td>
+                                            <td class="created"> 2022/08/22 14:06 </td>
+                                            <td class="updated"> 2022/08/23 08:44 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987854" rel="987854" data-issuekey="MSKR-53965" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53965" href="https://jiralive.nexon.com/browse/MSKR-53965">MSKR-53965</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 이동 관련 스킬만 사용할 수 있는 맵에서 제로 버스트 스텝으로 좌,우 이동 불가한 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 14:35 </td>
+                                            <td class="updated"> 2022/08/23 13:08 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988386" rel="988386" data-issuekey="MSKR-54071" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54071" href="https://jiralive.nexon.com/browse/MSKR-54071">MSKR-54071</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 일리움, 특정 상황에서 소울 오브 크리스탈 스택이 초기화되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            정현정 [meowgrrr]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:41 </td>
+                                            <td class="updated"> 2022/08/22 22:38 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987767" rel="987767" data-issuekey="MSKR-53942" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53942" href="https://jiralive.nexon.com/browse/MSKR-53942">MSKR-53942</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 재규어 라이딩 상태에서 점프 또는 더블 점프 1~2회 후 다시 라이딩 스킬 재사용 시, 하차하는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 12:00 </td>
+                                            <td class="updated"> 2022/08/23 11:42 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    _스킬, 와일드헌터, 재규어라이딩</td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987903" rel="987903" data-issuekey="MSKR-53978" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53978" href="https://jiralive.nexon.com/browse/MSKR-53978">MSKR-53978</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 제로 버스트 스텝 사용 후 쉐도우 플래시 폭발 스킬을 사용할 수 없는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 15:36 </td>
+                                            <td class="updated"> 2022/08/23 21:37 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987891" rel="987891" data-issuekey="MSKR-53976" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53976" href="https://jiralive.nexon.com/browse/MSKR-53976">MSKR-53976</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 제로 버스트 스텝 사용 후 플래시 어썰터 사용 시, 아래로 떨어지는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/19 15:25 </td>
+                                            <td class="updated"> 2022/08/29 09:16 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987857" rel="987857" data-issuekey="MSKR-53967" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53967" href="https://jiralive.nexon.com/browse/MSKR-53967">MSKR-53967</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 제로 버스트 스텝 좌, 우 이동을 통한 지형 이동이 상이한 현상
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 14:39 </td>
+                                            <td class="updated"> 2022/08/23 21:17 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988000" rel="988000" data-issuekey="MSKR-53996" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53996" href="https://jiralive.nexon.com/browse/MSKR-53996">MSKR-53996</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 카데나 체인아츠: 테이크다운을 먼 거리에서 사용 시 데미지가 적용되지 않는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;보류&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;보류된 이슈&lt;/span&gt;">보류</span>    </td>
+                                            <td class="created"> 2022/08/19 17:52 </td>
+                                            <td class="updated"> 2022/08/23 08:44 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988349" rel="988349" data-issuekey="MSKR-54057" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54057" href="https://jiralive.nexon.com/browse/MSKR-54057">MSKR-54057</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 카데나 테이크다운 난타 중 다크사이트 해제되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:59 </td>
+                                            <td class="updated"> 2022/08/23 17:10 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987839" rel="987839" data-issuekey="MSKR-53962" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53962" href="https://jiralive.nexon.com/browse/MSKR-53962">MSKR-53962</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 카이저 윌 오브 소드 on으로 변경 후 10초 후에 소환된 소드를 발사하면 곧바로 소드가 소환되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 14:15 </td>
+                                            <td class="updated"> 2022/08/25 15:13 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987836" rel="987836" data-issuekey="MSKR-53961" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53961" href="https://jiralive.nexon.com/browse/MSKR-53961">MSKR-53961</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 카이저 윌 오브 소드 차지로 발사된 소드가 체공 시 발견한 몬스터를 공격하지 않는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 14:06 </td>
+                                            <td class="updated"> 2022/08/23 11:46 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987830" rel="987830" data-issuekey="MSKR-53957" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53957" href="https://jiralive.nexon.com/browse/MSKR-53957">MSKR-53957</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 카이저 윌 오브 소드 쿨타임 감소 및 쿨타임 초기화 기능이 적용되지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 14:01 </td>
+                                            <td class="updated"> 2022/08/25 15:13 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988275" rel="988275" data-issuekey="MSKR-54032" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54032" href="https://jiralive.nexon.com/browse/MSKR-54032">MSKR-54032</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 카이저 인퍼널 브레스 사용 시 화염불길이 몬스터를 지속 공격하지 않는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 13:18 </td>
+                                            <td class="updated"> 2022/08/23 17:11 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988756" rel="988756" data-issuekey="MSKR-54145" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54145" href="https://jiralive.nexon.com/browse/MSKR-54145">MSKR-54145</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 캐논슈터, 풀 메이커 마지막 포격에 드랍되는 보급품 개수가 상이한 현상
+    </p>
+</td>
+                                            <td class="assignee">            정현정 [meowgrrr]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/23 13:41 </td>
+                                            <td class="updated"> 2022/08/25 16:30 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988015" rel="988015" data-issuekey="MSKR-54002" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54002" href="https://jiralive.nexon.com/browse/MSKR-54002">MSKR-54002</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 키네시스 사이킥 무브 캔슬을 통해 사이킥 무브는 사용되지 않지만 딜레이는 캔슬이 되는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 18:32 </td>
+                                            <td class="updated"> 2022/08/23 19:56 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988027" rel="988027" data-issuekey="MSKR-54007" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54007" href="https://jiralive.nexon.com/browse/MSKR-54007">MSKR-54007</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 팔라딘 블래스트 해머 이펙트가 디렉션 맵에서 출력되는 문제
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 19:40 </td>
+                                            <td class="updated"> 2022/08/23 20:07 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988751" rel="988751" data-issuekey="MSKR-54142" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54142" href="https://jiralive.nexon.com/browse/MSKR-54142">MSKR-54142</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 팔라딘 블레싱 아머가 캐릭터 머리 위에 출력되는 검은 마법사 창조, 파괴 이펙트와 겹치는 문제
+    </p>
+</td>
+                                            <td class="assignee">            최동혁 [cdh0729]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Next Update&lt;/span&gt;">Next Update</span>    </td>
+                                            <td class="created"> 2022/08/23 13:31 </td>
+                                            <td class="updated"> 2022/08/29 13:59 </td>
+                                            <td class="resolution">    미해결
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988352" rel="988352" data-issuekey="MSKR-54059" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54059" href="https://jiralive.nexon.com/browse/MSKR-54059">MSKR-54059</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 팬텀, 스킬 스틸로 획득한 쇼다운 챌린지 관련 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            정현정 [meowgrrr]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:01 </td>
+                                            <td class="updated"> 2022/08/22 22:09 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988375" rel="988375" data-issuekey="MSKR-54067" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54067" href="https://jiralive.nexon.com/browse/MSKR-54067">MSKR-54067</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 팬텀, 스킬 스틸로 획득한 애로우 플래터 커스텀 커맨드 관련 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 15:28 </td>
+                                            <td class="updated"> 2022/08/22 22:38 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988025" rel="988025" data-issuekey="MSKR-54006" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54006" href="https://jiralive.nexon.com/browse/MSKR-54006">MSKR-54006</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 플래그 레이스의 불기둥에 피격 시 팔라딘 블레싱 아머가 발동되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            김재유 [skelly1]
+    </td>
+                                            <td class="reporter">            이태경 [leetk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 19:32 </td>
+                                            <td class="updated"> 2022/08/23 20:12 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988505" rel="988505" data-issuekey="MSKR-54091" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54091" href="https://jiralive.nexon.com/browse/MSKR-54091">MSKR-54091</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 플위, 샐리맨더 미스칩 오버로드 마나 적용 여부 확인 요청
+    </p>
+</td>
+                                            <td class="assignee">            김호식2 [bluecoffee]
+    </td>
+                                            <td class="reporter">            김형종 [hjong]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 18:45 </td>
+                                            <td class="updated"> 2022/08/25 15:14 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988480" rel="988480" data-issuekey="MSKR-54086" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54086" href="https://jiralive.nexon.com/browse/MSKR-54086">MSKR-54086</a>
+</td>
+                                            <td class="summary"><p>
+                [스킬밸런싱] 히어로, 콤보 어택 발동되지 않은 상태로 소드 일루전 발동 시 최종 데미지가 감소되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            구유리 [yrku]
+    </td>
+                                            <td class="reporter">            박준석 [parkjs]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 18:07 </td>
+                                            <td class="updated"> 2022/08/23 14:34 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988423" rel="988423" data-issuekey="MSKR-54078" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54078" href="https://jiralive.nexon.com/browse/MSKR-54078">MSKR-54078</a>
+</td>
+                                            <td class="summary"><p>
+                [썬데이] 마라벨 패키지 교환권에 띄어쓰기 오타 존재
+    </p>
+</td>
+                                            <td class="assignee">            장민수2 [msjang]
+    </td>
+                                            <td class="reporter">            김혜원 [hyewonk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 16:28 </td>
+                                            <td class="updated"> 2022/08/22 17:46 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987835" rel="987835" data-issuekey="MSKR-53960" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53960" href="https://jiralive.nexon.com/browse/MSKR-53960">MSKR-53960</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움]  오디움 성문으로 가는 길 1~4 사냥터에서 미스틱 도어 설치 후 사용 시 종료되는 문제
+    </p>
+</td>
+                                            <td class="assignee">            장원석2 [tmzls5048]
+    </td>
+                                            <td class="reporter">            전유림 [jeonyul]
+    </td>
+                                            <td class="priority">           S
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 14:06 </td>
+                                            <td class="updated"> 2022/08/23 13:24 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987955" rel="987955" data-issuekey="MSKR-53992" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53992" href="https://jiralive.nexon.com/browse/MSKR-53992">MSKR-53992</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 993217041 맵에서 렉 발생한다는 버그리포트 유입
+    </p>
+</td>
+                                            <td class="assignee">            송의성 [krsong97]
+    </td>
+                                            <td class="reporter">            정다운4 [dangung]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 16:51 </td>
+                                            <td class="updated"> 2022/08/19 17:02 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987759" rel="987759" data-issuekey="MSKR-53940" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53940" href="https://jiralive.nexon.com/browse/MSKR-53940">MSKR-53940</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 마을 포탈 이용시 라이딩 이미지가 잘려 보이는 현상
+    </p>
+</td>
+                                            <td class="assignee">            송의성 [krsong97]
+    </td>
+                                            <td class="reporter">            김준영2 [crisispr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 11:52 </td>
+                                            <td class="updated"> 2022/08/19 15:31 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987751" rel="987751" data-issuekey="MSKR-53939" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53939" href="https://jiralive.nexon.com/browse/MSKR-53939">MSKR-53939</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 마을과 거점맵이 미니맵, 월드맵이 연결되지 않았다는 동향
+    </p>
+</td>
+                                            <td class="assignee">            박혜진4 [Jinbyjin915]
+    </td>
+                                            <td class="reporter">            김준영2 [crisispr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 11:28 </td>
+                                            <td class="updated"> 2022/08/22 13:40 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987936" rel="987936" data-issuekey="MSKR-53985" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53985" href="https://jiralive.nexon.com/browse/MSKR-53985">MSKR-53985</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 마을과 실험실이 연결되기 전, 마을에서 실험실 근처 맵 길안내 시 보이지 않는 포탈로 안내하는 현상
+    </p>
+</td>
+                                            <td class="assignee">            박혜진4 [Jinbyjin915]
+    </td>
+                                            <td class="reporter">            전유림 [jeonyul]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 16:14 </td>
+                                            <td class="updated"> 2022/08/23 13:26 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987817" rel="987817" data-issuekey="MSKR-53951" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53951" href="https://jiralive.nexon.com/browse/MSKR-53951">MSKR-53951</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 메카닉 로봇이 잘려보인다는 동향
+    </p>
+</td>
+                                            <td class="assignee">            송의성 [krsong97]
+    </td>
+                                            <td class="reporter">            김준영2 [crisispr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 13:41 </td>
+                                            <td class="updated"> 2022/08/23 11:49 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987824" rel="987824" data-issuekey="MSKR-53954" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53954" href="https://jiralive.nexon.com/browse/MSKR-53954">MSKR-53954</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 메카닉 부스터 전개로 공중 체공하면서 포탈 이용시 시스템메세지 출력
+    </p>
+</td>
+                                            <td class="assignee">            송의성 [krsong97]
+    </td>
+                                            <td class="reporter">            김준영2 [crisispr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 13:48 </td>
+                                            <td class="updated"> 2022/08/23 11:35 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988304" rel="988304" data-issuekey="MSKR-54043" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54043" href="https://jiralive.nexon.com/browse/MSKR-54043">MSKR-54043</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 스토리 첫 퀘스트 완료 후 길라잡이 이동 버튼이 활성화 되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            장원석2 [tmzls5048]
+    </td>
+                                            <td class="reporter">            김준영2 [crisispr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:04 </td>
+                                            <td class="updated"> 2022/08/24 10:42 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987920" rel="987920" data-issuekey="MSKR-53983" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53983" href="https://jiralive.nexon.com/browse/MSKR-53983">MSKR-53983</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 앨터의 안내2 퀘스트 창 완료 설명에 대상 몬스터가 잘못 적혀있는 현상
+    </p>
+</td>
+                                            <td class="assignee">            박혜진4 [Jinbyjin915]
+    </td>
+                                            <td class="reporter">            전유림 [jeonyul]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 15:51 </td>
+                                            <td class="updated"> 2022/08/22 19:25 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987746" rel="987746" data-issuekey="MSKR-53938" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53938" href="https://jiralive.nexon.com/browse/MSKR-53938">MSKR-53938</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움] 일일퀘스트 Q정보창에 심볼이 아르크스로 보여지는 현상
+    </p>
+</td>
+                                            <td class="assignee">            장원석2 [tmzls5048]
+    </td>
+                                            <td class="reporter">            김준영2 [crisispr]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 11:19 </td>
+                                            <td class="updated"> 2022/08/22 13:36 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow987816" rel="987816" data-issuekey="MSKR-53950" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-53950" href="https://jiralive.nexon.com/browse/MSKR-53950">MSKR-53950</a>
+</td>
+                                            <td class="summary"><p>
+                [오디움][스킬밸런싱] 무너지는 실험체에게 나이트로드 스로우 블래스팅 폭발부적이 발동되지 않는 현상
+    </p>
+</td>
+                                            <td class="assignee">            박혜진4 [Jinbyjin915]
+    </td>
+                                            <td class="reporter">            전유림 [jeonyul]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/19 13:41 </td>
+                                            <td class="updated"> 2022/08/23 13:37 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988343" rel="988343" data-issuekey="MSKR-54056" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54056" href="https://jiralive.nexon.com/browse/MSKR-54056">MSKR-54056</a>
+</td>
+                                            <td class="summary"><p>
+                [이그니션] 불꽃축제 일일미션에 오디움 일일 미션이 없는 현상
+    </p>
+</td>
+                                            <td class="assignee">            곽혜주 [rasthie]
+    </td>
+                                            <td class="reporter">            김혜원 [hyewonk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 14:49 </td>
+                                            <td class="updated"> 2022/08/22 17:47 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988289" rel="988289" data-issuekey="MSKR-54039" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54039" href="https://jiralive.nexon.com/browse/MSKR-54039">MSKR-54039</a>
+</td>
+                                            <td class="summary"><p>
+                [이그니션] 이그니션 이벤트 맵 이동 선택지 단일화
+    </p>
+</td>
+                                            <td class="assignee">            곽혜주 [rasthie]
+    </td>
+                                            <td class="reporter">            김혜원 [hyewonk]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 13:38 </td>
+                                            <td class="updated"> 2022/08/23 14:38 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988892" rel="988892" data-issuekey="MSKR-54161" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54161" href="https://jiralive.nexon.com/browse/MSKR-54161">MSKR-54161</a>
+</td>
+                                            <td class="summary"><p>
+                [이그니션]피날레 시작 퀘스트에 쉼표 미출력되는 현상
+    </p>
+</td>
+                                            <td class="assignee">            장원석2 [tmzls5048]
+    </td>
+                                            <td class="reporter">            한지원 [vivid]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/23 17:11 </td>
+                                            <td class="updated"> 2022/08/24 11:42 </td>
+                                            <td class="resolution">    버그아님
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988236" rel="988236" data-issuekey="MSKR-54021" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54021" href="https://jiralive.nexon.com/browse/MSKR-54021">MSKR-54021</a>
+</td>
+                                            <td class="summary"><p>
+                [익스프레스] 어텐션플리즈 오타 및 맞춤법 취합
+    </p>
+</td>
+                                            <td class="assignee">            장민수2 [msjang]
+    </td>
+                                            <td class="reporter">            홍정우 [opinio]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 11:53 </td>
+                                            <td class="updated"> 2022/08/24 11:41 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988268" rel="988268" data-issuekey="MSKR-54029" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54029" href="https://jiralive.nexon.com/browse/MSKR-54029">MSKR-54029</a>
+</td>
+                                            <td class="summary"><p>
+                [황금마차] 의자 선택권과 구성 의자 명칭이 서로 상이한 현상
+    </p>
+</td>
+                                            <td class="assignee">            장민수2 [msjang]
+    </td>
+                                            <td class="reporter">            홍정우 [opinio]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 13:05 </td>
+                                            <td class="updated"> 2022/08/23 16:40 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+
+
+                <tr id="issuerow988256" rel="988256" data-issuekey="MSKR-54026" class="issuerow">
+                                            <td class="issuetype">    버그
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="MSKR-54026" href="https://jiralive.nexon.com/browse/MSKR-54026">MSKR-54026</a>
+</td>
+                                            <td class="summary"><p>
+                [황금마차] 황금마차ui 드래그 적용 범위 확인요청
+    </p>
+</td>
+                                            <td class="assignee">            장민수2 [msjang]
+    </td>
+                                            <td class="reporter">            홍정우 [opinio]
+    </td>
+                                            <td class="priority">           B
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;작업 완료&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;작업이 완료된 이슈&lt;/span&gt;">작업 완료</span>    </td>
+                                            <td class="created"> 2022/08/22 12:26 </td>
+                                            <td class="updated"> 2022/08/23 17:03 </td>
+                                            <td class="resolution">    수정됨
+</td>
+                                            <td class="customfield_12710">    </td>
+                                            <td class="customfield_12506">    버그리포트</td>
+                    </tr>
+                </tbody>
+    </table>
+    </issuetable-web-component>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="12"><font size="1">
+        Jira 8.13.22#813022-sha1:0bfa32aeac99337fb4121989dd25167b6f869653(을)를 사용하여 박준석 [parkjs]에 의해 Wed Aug 31 14:07:26 KST 2022에서 생성됨.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

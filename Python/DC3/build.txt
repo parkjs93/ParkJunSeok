@@ -1,0 +1,4 @@
+pyinstaller --icon=iccon.ico -w --onefile DamageCal2.py
+
+
+pyinstaller --icon=iccon.ico -w DamageCal2.py
