@@ -368,6 +368,8 @@ typedef Operation = int Function(int x, int y, int z);
 
 int add(int x, int y, int z) => x+y+z;
 int subtract(int x, int y, int z) => x-y-z;
+
+//대부분 tyepdef 함수를 사용하는 방식
 int calculator(int x, int y, int z, Operation oper) {
   return oper(x, y, z);
 }
