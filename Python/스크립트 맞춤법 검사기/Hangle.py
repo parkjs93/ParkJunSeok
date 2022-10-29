@@ -11,14 +11,25 @@ window.resizable(False,False)
 
 #함수 부분
 def txtFileOpen():
+
     #파일 탐색기 오픈
     txtfilename = filedialog.askopenfilename(initialdir="",title="Select File")
     print(txtfilename)
 
     ######엑셀 작업부분######
-    #지정된 파일 불러오기 (뒤 인자값 xlsm 데이터 적용을 위함)
-    wb=load_workbook("Script Check.xlsm",read_only=False, keep_vba=True)
+    #지정된 파일 불러오기 (뒤 인자값 xlsm 데이터 적용을 위함) !!!!!지금 테스트를 위해 T 파일로 해뒀으니 나중에 변경할 것!!!!!
+    wb=load_workbook("Script CheckT.xlsm",read_only=False,keep_vba=True)#
     ws=wb['script']
+
+    #엑셀에 값이 있는지 확인 후 빈 값 아니면 지우기
+    check=0
+    for i in ws.rows:
+        print(ws.cell(row=5+check, column=2).value)
+        if(ws.cell(row=5+check, column=2).value == None):
+            pass
+        else:
+            ws.cell(row=5+check, column=2).value = ""
+        check += 1
 
     #txt 파일 오픈하여 lines 리스트 변수에 저장
     with open(txtfilename,"r",encoding="utf8") as file:
@@ -28,9 +39,14 @@ def txtFileOpen():
         j=0
         for line in lines:
             ####여기에 sayface 함수 조건문 및 슬라이싱 넣기
-            ws.cell(row=5+j, column=2).value=str(line)
-            j+=1
+            if (line.find('sayface') != -1):
+                print (line)
+                ws.cell(row=5+j, column=2).value=str(line)
+                j+=1
+            else:
+                print("sayface 아님")
 
+    #!!!!!!!! 파일명 나중에 다시 변경해주기!!!!!
     wb.save("Script CheckT.xlsm")
 
 
