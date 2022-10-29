@@ -5,7 +5,7 @@ void main(List<String> arguments) {
   //생성자 선언을 했기 때문에 인스턴스 생성시 값을 넣어줘야 한다
   Idol black = new Idol("오가온", ['박', '준', '석']);
 
-//  black.name = "박준석"; //클래스 내 변수를 final로 선언했기 때문에 값 변경 불가.
+  //black.name = "박준석"; //클래스 내 변수를 final로 선언했기 때문에 값 변경 불가.
   print(black.name);
   print(black.members);
   black.sayHello();
@@ -28,6 +28,23 @@ void main(List<String> arguments) {
   print(blue.members);
   blue.sayHello();
   blue.introduce();
+
+  //constructor를 const로 선언한 경우 red 인스턴스 선언 시 매개 변수 값을 변경할 수 없다.
+  //const : 빌드 타임에 값을 알고 있어야 오류가 발생하지 않는다.
+  Idol red = const Idol("red", ["1", "2", "3"]);
+
+  print(red.name);
+  print(red.members);
+  red.sayHello();
+  red.introduce();
+
+  //const로 선언하지 않은 red2 인스턴스
+  //red 인스턴스와 값은 같지만 값이 생성될 때 마다 값이 올라가기 때문에 다른 값이라고 함
+  Idol red2 = new Idol("red", ["1", "2", "3"]);
+  print(red == red2); //const로 선언하지 않아 false
+
+  Idol red3 = const Idol("red", ["1", "2", "3"]);
+  print(red == red3); // const로 선언하여 같은 인스턴스가 될 수 있다.
 }
 
 //class class명
@@ -51,7 +68,7 @@ class Idol {
 
   //방법 2.
   //인스턴스 생성 시 받아온 값을 현재 클래스 내에 변수에 값을 저장한다. (간단하고 좋음)
-  Idol(this.name, this.members);
+  const Idol(this.name, this.members);
 
   //named-constructor 선언
   //기본 constructor과 동시에 사용이 가능하다.

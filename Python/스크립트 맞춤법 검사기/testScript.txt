@@ -1,0 +1,82 @@
+	npc95 = fi.summonNpc(getNpcNum("침입자"), 601 , -100, 1, target.nCharacterID,0,1); 
+	aa95 =  fi.npc(npc95, 1);	
+	npc96 = fi.summonNpc(getNpcNum("침입자"), 549 , -100, 1, target.nCharacterID,0,1); 
+	aa96 =  fi.npc(npc96, 1);	
+	npc97= fi.summonNpc(getNpcNum("침입자"), 909 , -100, 0, target.nCharacterID,0,1); 
+	aa97 =  fi.npc(npc97, 1);	
+	npc98 = fi.summonNpc(getNpcNum("침입자"), 959 , -100, 0, target.nCharacterID,0,1); 
+	aa98 =  fi.npc(npc98, 1);	
+
+	
+	aa2.setAlpha(0,0);
+	aa3.setAlpha(0,0);
+	aa4.setAlpha(0,0);
+	aa5.setAlpha(0,0);
+	aa6.setAlpha(0,0);
+	aa7.setAlpha(0,0);
+	
+
+	target.inGameDelay(1500);
+	
+
+	//암막
+
+	sayface( "이카르트","내가 눈을 떴을 땐, #r아무도 없었다.#k 부모고 형제고, 누구 하나 없었지.", "NoESC", "0", "");
+	sayface( "이카르트","그런 아이가 살기 위해 할 수 있는 건 #r도둑질#k뿐이었다.", "NoESC", "0", "");
+
+	sayface( "이카르트","그러다…… #b은인#k을 만났지.", "NoESC", "0", "");
+	sayface( "이카르트","긴 머리칼이 아름다웠던 그녀.", "NoESC", "1", "");
+	sayface( "이카르트","의적 길드의 길드장이었던 그녀는 나를 제자로 받아주었다. \r\n난 그렇게 스승님의 가르침 아래 #b새 삶#k을 얻게 되었다.", "NoESC", "1", "");
+	sayface( "이카르트","그저 살기 위해 살아갔던 나에게 #b삶의 목적#k이라는 걸 준 소중한 사람이지.", "NoESC", "1", "");
+	
+	sayface( "이카르트","난 스승님과 함께 길드 활동을 했었다. \r\n#b보이지 않는 곳에서 고통받는 이들을 구해주는 일#k이었지.", "NoESC", "1", "");
+	sayface( "이카르트","내 입으로 말하긴 부끄럽지만, 그 언제보다 행복했었다.", "NoESC", "1", "");
+	sayface( "이카르트","하지만, 행복은 항상 영원하지 않은 법이지.", "NoESC", "0", "");
+
+	sayface( "이카르트","우리의 선의를 못마땅하게 여기던 자들이 있었다.", "NoESC", "2", "");
+	sayface( "이카르트","……그 녀석들이 우리를 #r습격#k했지.", "NoESC", "3", "");
+	sayface( "이카르트","다행인지, 아닌지…… 난 그때 개별 임무를 수행하던 중이었다. ", "NoESC", "2", "");
+	sayface( "이카르트","임무를 마치고 복귀하고 보니…….", "NoESC", "3", "");
+
+	//암막 해제
+	//걸어가는 이카르트. 페허가 된 길드 근처 발견
+
+	target.inGameDelay(700);
+	aa1.setForceMove(1,100);
+	target.inGameDelay(500);
+	target.resetScreenBlind(800);
+	target.inGameEffect("Effect/OnUserEff.img/emotion/oh", 0, 0, 0, 0, npc1,0);
+	target.inGameDelay(1500);
+	
+	target.inGameCameraZoom(3000,1500,3000,815,-86,5);
+	target.inGameDelay(3500);
+	sayface( "이카르트2","이게 대체 무슨…….", "NoESC", "0", "");
+	
+	
+	
+	//누군가의 습격
+	//처치하는 이카르트
+
+	sayface( "이카르트2","#r침입자?", "NoESC", "0", "");
+
+	//주변에 슬슬 나타나는 침입자들
+	target.effectOverlap(1200);
+	target.inGameCameraZoom(0,1500,0,-500,34,5);
+	target.inGameDelay(1200);
+
+	target.fieldFloating(10,10,10,200);
+	target.effectSound("Sound/SoundEff.img/blackHeaven/explosion8");
+	target.inGameEffect( "Effect/BasicEff.img/shadowerTeleport", 0 , 0, 0, 0, npc2,0 ); 
+	target.inGameEffect( "Effect/BasicEff.img/shadowerTeleport", 0 , 0, 0, 0, npc3,0 ); 
+	target.inGameEffect( "Effect/BasicEff.img/shadowerTeleport", 0 , 0, 0, 0, npc4,0 ); 
+	target.inGameEffect( "Effect/BasicEff.img/shadowerTeleport", 0 , 0, 0, 0, npc5,0 ); 
+	target.inGameEffect( "Effect/BasicEff.img/shadowerTeleport", 0 , 0, 0, 0, npc6,0 ); 
+	target.inGameEffect( "Effect/BasicEff.img/shadowerTeleport", 0 , 0, 0, 0, npc7,0 ); 
+	aa2.setAlpha(255,200);
+	aa3.setAlpha(255,200);
+	aa4.setAlpha(255,200);
+	aa5.setAlpha(255,200);
+	aa6.setAlpha(255,200);
+	aa7.setAlpha(255,200);
+	target.inGameDelay(400);
+	target.fieldFloating(0,0,0,1000);
