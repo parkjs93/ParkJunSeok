@@ -10,6 +10,19 @@ window.geometry("350x200+200+200")
 window.resizable(False,False)
 
 #함수 부분
+def extraction(text):
+    ###여기에 sayface 함수 조건문 및 슬라이싱 넣기
+        if (text.find('sayface') != -1):
+            sentenceStart_index = text.find('","')
+            sentence=text[sentenceStart_index+3:]
+            sentenceEnd_index = sentence.find('",')
+            sentence = sentence[:sentenceEnd_index]
+            return sentence
+        else:
+                pass
+
+
+
 def txtFileOpen():
 
     #파일 탐색기 오픈
@@ -22,14 +35,15 @@ def txtFileOpen():
     ws=wb['script']
 
     #엑셀에 값이 있는지 확인 후 빈 값 아니면 지우기
-    check=0
-    for i in ws.rows:
-        print(ws.cell(row=5+check, column=2).value)
-        if(ws.cell(row=5+check, column=2).value == None):
-            pass
-        else:
-            ws.cell(row=5+check, column=2).value = ""
-        check += 1
+    row_check=5
+    for r in ws.rows: # !!!!!!!왜 64325까지 가는지 확인 필요...!!!!!
+        for c in range(6):
+            if(ws.cell(row=row_check, column=2+c).value == None):
+                pass
+            else:
+                ws.cell(row=row_check, column=2+c).value = None
+        row_check += 1
+    print("빈값 처리 완료")
 
     #txt 파일 오픈하여 lines 리스트 변수에 저장
     with open(txtfilename,"r",encoding="utf8") as file:
@@ -38,16 +52,16 @@ def txtFileOpen():
         #한 줄 씩 엑셀에 값 입력하기
         j=0
         for line in lines:
-            ####여기에 sayface 함수 조건문 및 슬라이싱 넣기
-            if (line.find('sayface') != -1):
-                print (line)
-                ws.cell(row=5+j, column=2).value=str(line)
-                j+=1
-            else:
-                print("sayface 아님")
+            sentence = extraction(line)
+            print(sentence,j)
+            j+=1
+
+            
+
 
     #!!!!!!!! 파일명 나중에 다시 변경해주기!!!!!
     wb.save("Script CheckT.xlsm")
+    print("end")
 
 
 
