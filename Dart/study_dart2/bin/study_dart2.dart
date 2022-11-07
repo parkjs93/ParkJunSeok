@@ -45,6 +45,15 @@ void main(List<String> arguments) {
 
   Idol red3 = const Idol("red", ["1", "2", "3"]);
   print(red == red3); // const로 선언하여 같은 인스턴스가 될 수 있다.
+
+  //---------------------------------------------------------
+  //getter, setter
+  GetSetIdol getsetName =
+      new GetSetIdol("getter", ["parkjs", "ohgaon", "list"]);
+
+  print(getsetName.firstMember);
+  getsetName.firstMember = "setter";
+  print(getsetName.firstMember);
 }
 
 //class class명
@@ -85,5 +94,36 @@ class Idol {
 
   void introduce() {
     print("members 출력 : ${this.members}");
+  }
+}
+
+//getter : 값을 가져올 떄 사용하는 것
+//setter : 데이터를 설정 할 때 사용하는 것
+//데이터를 간단하게 가공할 때 사용
+class GetSetIdol {
+  final String name;
+  final List<String> menbers;
+
+  GetSetIdol(this.name, this.menbers);
+
+  void sayHello() {
+    print("name : ${this.name}");
+  }
+
+  void introuduce() {
+    print("members : ${this.menbers}");
+  }
+
+  //getter (String을 리턴해주는 getter이다.)
+  String get firstMember {
+    return this.menbers[0];
+  }
+
+  //setter : 하나의 파라미터만 설정 가능
+  //main 함수에서 받은 값을 파라미터로 받게 되는 것
+  // 클래스에서 변수를 선언할 때 대부분 final로 선언하여 변경할 수 없게 하지만
+  // 리스트 값을 변경할 수 있어 자주 사용하지 않는다.
+  set firstMember(String name) {
+    this.menbers[0] = name;
   }
 }
