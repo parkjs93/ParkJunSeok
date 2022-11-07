@@ -8,10 +8,9 @@ import os
 
 ###윈도우 생성하기###
 window = tkinter.Tk()
-
 window.title("스크립트 맞춤법 검사기")
 window.geometry("350x400+200+200")
-window.wm_iconbitmap('babyyeti.ico')
+window.wm_iconbitmap('babyyeti.ico') #아이콘 생성
 window.resizable(False,False)
 
 ###노트북(바탕) 만들기###
@@ -19,12 +18,10 @@ notebook = tkinter.ttk.Notebook(window)
 notebook.place(relx=0.01,relwidth=0.98, relheight=0.91)
 
 #UI 부분
-#국내
 frame_main = tkinter.Frame(window)
 notebook.add(frame_main, text="Main")
-frame_Kor_sentence = tkinter.Frame(window)
-frame_Kor_item = tkinter.Frame(window)
-frame_Kor_skill = tkinter.Frame(window)
+frame_sentence = tkinter.Frame(window)
+frame_item = tkinter.Frame(window)
 
 #####함수 부분####
 #프레임 지워주기
@@ -32,9 +29,9 @@ def frame_clear():
     if(notebook.tabs() == ('.!frame',)):
         notebook.forget(frame_main)
     elif(notebook.tabs() == ('.!frame2',)):
-        notebook.forget(frame_Kor_sentence)
+        notebook.forget(frame_sentence)
     elif(notebook.tabs() == ('.!frame3',)):
-        notebook.forget(frame_Kor_item)
+        notebook.forget(frame_item)
     else:
         pass
 
@@ -48,10 +45,10 @@ def frame_active(framename):
     ####국내####
     if(framename == "sentence"):
         frame_clear()
-        notebook.add(frame_Kor_sentence, text="Script")
+        notebook.add(frame_sentence, text="Script")
     elif(framename == "item"):
         frame_clear()
-        notebook.add(frame_Kor_item, text="Img File")
+        notebook.add(frame_item, text="Img File")
     else:
         frame_clear()
         notebook.add(frame_main, text="Main")
@@ -61,7 +58,7 @@ def extraction(text):
     #대사 함수 추출해서 저장하기
     for fs in range(0,len(sayfunc)):
         find_funcIndex = text.find(sayfunc[fs])
-        #sayfunc = 미리 선언한 대사 함수 유형 리스트에 포함될 경우
+        #sayfunc = 미리 선언한 대사 함수 유형 리스트에 포함될 경우 (ex. 함수명("유저","대사"))
         if(find_funcIndex != -1):
             fun_sentence = text[find_funcIndex:]
             fun_sentence = fun_sentence[:fun_sentence.find("(")]
@@ -116,21 +113,20 @@ def txtFileOpen(testFile, codeIdList):
                 else:
                     ws.cell(row=row_check, column=2+c).value = None
             row_check += 1
-        print("빈값 처리 완료")
         #파일 오픈하여 lines 리스트 변수에 저장
         path = pathlib.Path(txtfilename)
-        with open(path,"r",encoding="utf16") as file: #utf16은 .s파일 오픈할 때만... .txt
+        with open(path,"r",encoding="utf8") as file: #utf16은 .s파일 오픈할 때만... .txt
             try:
-                lines = file.readlines()
-            except UnicodeError:
-                with open(path,"r",encoding="utf8") as file:
+                lines = file.readlines()          #파일의 모든 줄을 읽어 lines 리스트에 저장
+            except UnicodeError:                    #UnicodeError 발생 시 utf8로 인코딩 진행
+                with open(path,"r",encoding="utf16") as file:
                     lines = file.readlines()
         #스크립트
         if(testFile=="script"):
             #한 줄 씩 엑셀에 값 입력하기
             j=5
             for line in lines:
-                scriptSentence = extraction(line)
+                scriptSentence = extraction(line)   #대사만 추출해내는 함수 동작
                 if(scriptSentence != None):
                     ws.cell(row=j, column=2).value = scriptSentence
                     j+=1
@@ -147,8 +143,7 @@ def txtFileOpen(testFile, codeIdList):
                 a = a.replace("\n"," ")
 
                 for code in range(0, len(codeIdList)):
-                    if(a.find(codeIdList[code]) != -1):
-                        print(a)
+                    if(a.find(str(codeIdList[code])) != -1):
                         nameIndex = a.find("//")
                         itemName=a[:nameIndex]
                         a_slice=a[nameIndex+1:]
@@ -173,15 +168,23 @@ def wordList(idcode):
     itemcode = []
     for id in range(0, len(idcode)):
         itemcode_index = idcode.find("\n")
-        itemcode.append(idcode[:itemcode_index])
+        itemcode.append(str(idcode[:itemcode_index]))
         idcode = idcode[itemcode_index+1:]
         if(len(idcode)==0):
+            #리스트 중 빈 값이 있으면 모든 값 출력되고있어 마지막에 빈 값 제거
+            for nullId in range (0,len(itemcode)):
+                if(itemcode[nullId]==""):
+                    itemcode.remove("")
+                else:
+                    pass
             return itemcode
+    
 
 #Text 박스에서 입력받은 값 리스트에 저장시키기
 def codeInsert(): 
     codeEntry = korItem_Entry.get(1.0, "end") 
     codeIdList=wordList(codeEntry)
+    print(codeIdList)
     txtFileOpen("img",codeIdList)
 
 def help():
@@ -217,7 +220,7 @@ main_textLable = tkinter.Label(frame_main, text="맞춤법 검사 및 미번역 
 main_textLable.place(relx=0.05,rely=0.35)
 
 #대사 맞춤법 검사 라벨
-korScriptLF=tkinter.LabelFrame(frame_Kor_sentence)
+korScriptLF=tkinter.LabelFrame(frame_sentence)
 korScriptLF.place(relx=0.01,relwidth=0.98,relheight=0.99)
 korScript_txt=tkinter.Label(korScriptLF, text="원하는 대사 스크립트 파일을 선택해주세요.", justify="left")
 korScript_txt.place(relx=0.1, rely=0.3)
@@ -227,7 +230,7 @@ korfileOpenBtn = tkinter.Button(korScriptLF, width=25, text="스크립트 파일
 korfileOpenBtn.place(relx=0.2, rely=0.6)
 
 #아이템 맞춤법 검사 라벨 
-korItemLF=tkinter.LabelFrame(frame_Kor_item)
+korItemLF=tkinter.LabelFrame(frame_item)
 korItemLF.place(relx=0.01,relwidth=0.98,relheight=0.99)
 korItem_Entry = tkinter.Text(korItemLF, width=30, height=23)
 korItem_Entry.insert(1.0,"검색할 코드 입력해주세요.\n\n.img 파일을 .xls 파일로 변환 후 진행 부탁드립니다.\n\n(해당 부분 모두 지우고 입력)")
